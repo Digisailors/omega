@@ -2,6 +2,7 @@
   "hosting": {
       
     "public": "public",
+    "clearUrls":true,
     "site": "omegafertility",
     "ignore": [
       "firebase.json",

@@ -1,4 +1,7 @@
 html{scroll-behavior:smooth}
+#home1{
+    margin-left: -10%;
+}
 #home2{
     margin-left: 50%;
 }

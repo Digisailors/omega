@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/contact_validate.js"></script>
 </head>
 
 <body>
@@ -92,8 +93,8 @@
           </button>
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ml-auto">
-              <li class="nav__item has-dropdown">
-                <a href="index.html" data-toggle="dropdown" class="nav__item-link">Home</a>
+              <li class="nav__item">
+                <a href="index.html" class="nav__item-link">Home</a>
                 <!-- <ul class="dropdown-menu"> -->
                 <!--<li class="nav__item">
                     <a href="index.html" class="nav__item-link">Home Main</a>
@@ -286,7 +287,11 @@
       <div class="row">
         <div class="col-12">
           <div class="contact-panel d-flex flex-wrap">
-            <form class="contact-panel__form" method="post" action="assets/php/contact.php" id="contactForm">
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+              onload="if(submitted)  { alert('Thanks for showing interest, Our team will contact you.'); window.location='https://qcerebrum1.web.app/';}"></iframe>
+            <form class="contact-panel__form"
+              action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSehfUohQMrphZWLwpCmfGtnpvKFs4v3xu1PeB9aEc_bg79FGw/formResponse"
+              target="hidden_iframe" method="POST" id="mG61Hd">
               <div class="row">
                 <div class="col-sm-12">
                   <h4 class="contact-panel__title">How Can We Help? </h4>
@@ -297,39 +302,35 @@
                 <div class="col-sm-6 col-md-6 col-lg-6">
                   <div class="form-group">
                     <i class="icon-user form-group-icon"></i>
-                    <input type="text" class="form-control" placeholder="Name" id="contact-name" name="contact-name"
+                    <input type="text" class="form-control" placeholder="Name" id="name" name="entry.781773550"
                       required>
                   </div>
                 </div><!-- /.col-lg-6 -->
                 <div class="col-sm-6 col-md-6 col-lg-6">
                   <div class="form-group">
                     <i class="icon-email form-group-icon"></i>
-                    <input type="email" class="form-control" placeholder="Email" id="contact-email" name="contact-email"
+                    <input type="email" class="form-control" placeholder="Email" id="email" name="entry.939903030"
                       required>
                   </div>
                 </div><!-- /.col-lg-6 -->
                 <div class="col-sm-6 col-md-6 col-lg-6">
                   <div class="form-group">
                     <i class="icon-phone form-group-icon"></i>
-                    <input type="text" class="form-control" placeholder="Phone" id="contact-Phone" name="contact-phone"
+                    <input type="text" class="form-control" placeholder="Phone" id="Phone" name="entry.26682099"
                       required>
                   </div>
                 </div><!-- /.col-lg-6 -->
                 <div class="col-sm-6 col-md-6 col-lg-6">
                   <div class="form-group">
                     <i class="icon-news form-group-icon"></i>
-                    <select class="form-control">
-                      <option value="0">Subject</option>
-                      <option value="1">Subject 1</option>
-                      <option value="2">Subject 1</option>
-                    </select>
+                    <input type="text" class="form-control" placeholder="Subject" id="" name="entry.">
                   </div>
                 </div><!-- /.col-lg-6 -->
                 <div class="col-12">
                   <div class="form-group">
                     <i class="icon-alert form-group-icon"></i>
                     <textarea class="form-control" placeholder="Message" id="contact-message"
-                      name="contact-message"></textarea>
+                      name="entry.1352292560"></textarea>
                   </div>
                   <button type="submit" class="btn btn__secondary btn__rounded btn__block btn__xhight mt-10">
                     <span>Submit Request</span> <i class="icon-arrow-right"></i>
@@ -368,7 +369,7 @@
                     Sun: 9:00 am - 1:00 pm
                   </li>
                 </ul>
-                <a href="#" class="btn btn__white btn__rounded btn__outlined">Contact Us</a>
+                <!-- <a href="#" class="btn btn__white btn__rounded btn__outlined">Contact Us</a> -->
               </div>
             </div>
           </div>

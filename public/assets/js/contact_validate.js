@@ -1,4 +1,4 @@
-  
+
 let submitted = false;
 
 function validateName() {
@@ -45,7 +45,7 @@ function validateEmail() {
 }
 
 function validateForm() {
-  if (!validateName() || !validatePhone() || !validateEmail()) {
+  if (!validateName() || !validateEmail()) {
     alert("Form not submitted"); //Validation Message
     return false;
   } else {
